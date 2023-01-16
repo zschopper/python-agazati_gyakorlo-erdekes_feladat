@@ -1,3 +1,5 @@
+# from test_input import input
+
 class Rendelo:
     # kakaós: “K”
     # nutellás: “N”
@@ -12,6 +14,7 @@ class Rendelo:
         self.lista = []
 
     # 1/A. feladat:
+    # A függvény visszaadja, hogy a betű hányszor szerepel a szóban
     def betukeres(self, szo, betu):
         i = 0
         db = 0
@@ -22,10 +25,14 @@ class Rendelo:
         return db
 
     # 1/B. feladat:
+    # A visszatérési érték igaz, ha a szó hossza a min és max között van (egyenlőség elfogadott)
+    # egyébként hamis
     def szohossz(self, szo, min, max):
         return min <= len(str(szo)) <= max
 
     # 2. feladat:
+    # addig kér egy szót, amíg a hossz és a tartalom ellenőrzésnek nem felel meg.
+    # a függvény a megadott szóval tér vissza
     def beker(self):
         rend = ""
         while not rend:
@@ -41,6 +48,7 @@ class Rendelo:
         return rend
 
     # 3. feladat:
+    # a paraméterben megadott darabszámú (ellenőrzött) szöveget kér be.
     def feltolt(self, db):
         self.lista = []
         while len(self.lista) < db:
@@ -49,6 +57,7 @@ class Rendelo:
         return self.lista
 
     # 4/A. feladat
+    # megszámolja, hogy az eddigi rendelések között hány garfield-os volt.
     def garfield_db(self):
         db = 0
         i = 0
@@ -58,6 +67,7 @@ class Rendelo:
         return db
 
     # 4/B. feladat
+    # megszámolja, hogy hány különféle rendelés volt
     def tanyerok(self):
         rendelesek = "".join(self.lista)
         i = 0

@@ -6,7 +6,8 @@ auto_input = False
 
 input_lista = [
     "MGNG",
-    "GMLMKKNMMNNGGM",
+    "",
+    "GMLMKKNMMNNGGMNGMNLLLNLKNN",
     "LGLA",
     "MNLNLNGG",
     "NGMNLLLNLKNN",
